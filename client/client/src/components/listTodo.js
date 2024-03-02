@@ -44,17 +44,17 @@ try {
             <table className="table mt-5 text-center">
                 <thead>
                     <tr>
-                        <th>Description</th>
-                        <th>Edit</th>
-                        <th>Delet</th>
+                        <th> <h2>Description</h2></th>
+                        <th><h2>Edit</h2> </th>
+                        <th><h2>Complete</h2> </th>
                     </tr>
                 </thead>
                 <tbody>
                     {todos.map((todo, i) => (
                         <tr key={todo.todo_id} id={todo.todo_id} >
-                            <td>{todo.description}</td>
-                            <td> <EditTodo todo = {todo} /> </td>
-                            <td><button className="btn btn-danger"   onClick={()=> {deleteTodo(todo.todo_id)}}>Delete</button> </td>
+                            <td className=""> <h3>{todo.description}</h3> </td>
+                            <td className=""> <EditTodo todo = {todo} /> </td>
+                            <td><button className="btn btn-light"   onClick={()=> {deleteTodo(todo.todo_id)}}>✅</button> </td>
                         </tr>
 
                     ))}

@@ -25,8 +25,8 @@ window.location = "/";
 
     return (<Fragment>
             <div className="">
-                <button type="button"  className="btn btn-warning" data-toggle="modal" data-target={`#id${props.todo.todo_id}`}  >
-                    Edit</button>
+                <button type="button"  className="btn btn-light" data-toggle="modal" data-target={`#id${props.todo.todo_id}`}  >
+                ✏️</button>
 
                 <div className="modal mt-5" id={`id${props.todo.todo_id}`}>
                     <div className="modal-dialog">
